@@ -23,6 +23,9 @@
 		"mig": "rm -rf prisma/migrations && pnpm prisma generate && pnpm prisma migrate dev --name init",
 		"fc": "pnpm prettier --write . && pnpm eslint --fix . && pnpm prettier --check . && pnpm eslint ."
 	},
+	"prisma": {
+		"seed": "tsx src/database/seed/seeder.ts"
+	},
 	"dependencies": {
 		"@prisma/client": "^5.21.1",
 		"compression": "^1.7.5",
